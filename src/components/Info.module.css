@@ -1,0 +1,204 @@
+
+.ticket__list{
+    box-shadow: 0px 0px 14px rgba(112, 121, 153, 0.3);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 1000px;
+    margin-top: 50px;
+}
+.return__ticket{
+    
+}
+.return__ticket::before{
+    content: '';
+    position: absolute;
+    width: 76%;
+    margin-left: 50px;
+    height: 1px;
+    border-top: 1px dashed #5C87DB;
+    z-index: 0;
+}
+.price {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 190px;
+    border-left: 1px solid #DDE3EE;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+
+}
+
+
+
+.info__card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 210px 40px 40px;
+    position: relative;
+    font-family: 'Roboto';
+}
+.logo  {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+}
+.logo img {
+    margin-top: 28px;
+    width: 40px;
+    margin-bottom: 8px; 
+}
+.status {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #8BA5D8;
+    border-radius: 15px 0px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 14px;
+    padding: 6px 23px;
+    color: #fff;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+
+}
+.bags{
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    align-items: flex-end;
+  
+}
+
+
+
+
+
+.main__info{
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
+}
+.departureInfo{
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    justify-content: space-between;
+}
+.departureInfo span{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+    color: #5C5C5C;
+}
+
+.flightInfo {
+    margin-top: -20px;
+    width: 260px;
+    border-top: 1px solid #B7BAC1;
+    color: #B7BAC1;
+    text-align: center;
+    position: relative;
+}
+.flightInfo::after{
+ content: '';
+ position: absolute;
+ top: -4px;
+ right: 0;
+ background-color: #B7BAC1;
+ width: 8px;
+ height: 8px;
+ border-radius: 50%;
+}
+.svo{
+    position: absolute;
+    top: -30px;
+    left: -11px;
+}
+.rov{
+    position: absolute;
+    top: -30px;
+    right: -14px;
+}
+
+.flightInfo::before{
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    background-color: #B7BAC1;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.arrivalInfo{
+    display: flex;
+    flex-direction: column;
+}
+.arrivalInfo span{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 10px;
+    color: #5C5C5C;
+}
+
+.active {background: #DDE3EE;}
+
+.timetable__info {
+    display: flex;
+    margin-top: 25px;
+}
+.time {
+    border: 1px solid #B7BAC1;
+    border-radius: 10px;
+    line-height: 21px; 
+    margin-right: 20px; 
+    padding: 6px;
+    cursor: pointer;
+}
+
+
+.departure__time {
+    font-size: 18px;
+}
+
+.arrival__time{
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}

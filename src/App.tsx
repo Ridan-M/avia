@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState, FC } from 'react';
 import './App.css';
+import { Form } from "./components/Form"
+import { InfoList } from "./components/InfoList"
+import { ITicket } from "./types/types"
+import { IAction } from "./types/types"
+import { state } from "./state/state"
+import { Route, Routes } from "react-router-dom";
 
-function App() {
+const App: FC = () => {
+  const [ticket, setTicket] = useState<ITicket>(state.ticket) 
+
+  const reducer = (action: IAction, state = ticket) => {
+    setTicket({...state, ...action})
+    
+  }
+  
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/*' element={<Form setTicket={reducer}/>}/>
+        <Route path='/avia/info' element={<InfoList ticket={ticket}/>}/>
+      </Routes>
     </div>
   );
 }
