@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/avia/static/css/main.8fb2cf62.css",
+    "main.js": "/avia/static/js/main.fd0221c2.js",
+    "static/media/calendar 1.svg": "/avia/static/media/calendar 1.ca5c29d74abdebbc7dc5.svg",
+    "static/media/Vector.svg": "/avia/static/media/Vector.5391a3a4a2b9a2018953.svg",
+    "index.html": "/avia/index.html",
+    "main.8fb2cf62.css.map": "/avia/static/css/main.8fb2cf62.css.map",
+    "main.fd0221c2.js.map": "/avia/static/js/main.fd0221c2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fb2cf62.css",
+    "static/js/main.fd0221c2.js"
+  ]
+}
